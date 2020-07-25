@@ -81,10 +81,12 @@ if not groupme_primary_token is None:
 
         # Check if it is from the primary group chat or the devroom, then choose which BOT_ID to use
         bot_id = 0
-        if int(data['group_id']) == int(os.getenv('gm_primary_group')):
-            bot_id = os.getenv('GM_PRIMARY_BOT_ID')
-        elif int(data['group_id']) == int(os.getenv('gm_dev_group')):
+        gm_primary_group = os.getenv('gm_primary_group')
+        gm_dev_group = os.getenv('gm_dev_group')
+        if not gm_dev_group is None and int(data['group_id']) == int(gm_dev_group):
             bot_id = os.getenv('GM_DEV_BOT_ID')
+        elif not gm_primary_group is None and int(data['group_id']) == int(gm_primary_group):
+            bot_id = os.getenv('GM_PRIMARY_BOT_ID')
         else:
             return "Groupme - Error: Unknown groupme group id ("+data['group_id']+").", 200
 
