@@ -71,7 +71,7 @@ def msg2bot_response(sender, user_input_raw):
 
 # ========== Messaging Platforms Webhooks ==========
 
-groupme_primary_token = os.getenv('GM_PRIMARY_BOT_ID')
+groupme_primary_token = os.getenv('GM_DEV_BOT_ID')
 if not groupme_primary_token is None:
     @app.route('/groupme'+groupme_primary_token, methods=['POST'])
     def groupme_webhook():
