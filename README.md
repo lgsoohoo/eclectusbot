@@ -9,6 +9,20 @@ Eclectus runs on Heroku and currently works on these messaging platforms:
 
 Also, a shout out to [Apnorton](https://github.com/apnorton) and his [Bloom Bot tutorial](https://www.apnorton.com/blog/2017/02/28/How-I-wrote-a-Groupme-Chatbot-in-24-hours), from which this code is forked.
 
+## Required Heroku Environment Variables (Config Vars)
+
+ - All platforms
+    - `BOT_NAME` - The name of your bot
+ - GroupMe
+    - `gm_dev_group` - Group ID for the "Dev Room" chat (Format: XXXXXXXX)
+    - `GM_DEV_BOT_ID` - Bot ID for the "Dev Room" chat (Format: XXXXXXXXXXXXXXXXXXXXXXXXXX)
+
+    - `gm_primary_group` - Group ID for the chat group with your friends (Format: XXXXXXXX)
+    - `GM_PRIMARY_BOT_ID` - Bot ID for the chat group with your friends (Format: XXXXXXXXXXXXXXXXXXXXXXXXXX)
+
+ - Telegram
+    - `telegram_token` - API token for your bot (Format: XXXXXXXXXX:XXXXXXXXX-XXXXXXXX-XXXXXXXXXXXXXXXX)
+
 ## Local Testing
 
 You can run `/app.py` to open a "chat prompt", simulate sending messsages to Eclectus, and view its response. It doesn't simulate extracting the chat message from different messaging platforms, so it's mainly useful for testing your custom commands or new modules.
