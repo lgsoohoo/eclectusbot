@@ -1,0 +1,11 @@
+{
+    "switch2response_dict": {
+        "bot_bye": [
+            "Bye!",
+            "Goodbye!",
+            "See ya!",
+            "Live long, and prosper.",
+            "Bye-Bye!"
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+Bot Commands
+------------
+Help:
+ - '!help', '!cmd' - Triggers this message!
+
+Text:
+ - '!shruggie' - ¯\_(ツ)_/¯
+
+Memes:
+ - '!bot_avatar' - Eclectus Bot's avatar!
+
+
+Games:
+ - '!roll', '!roll(%d&)' - Rolls dice, where %=number of dice, and &=number of sides (default=1d6)
+ - '!flip', '!coin' - Flips a fair, 2 sided coin
+ - '!rng' - Generates a random number from 0-100, inclusive
+
+Magic 8 Ball:
+ - '!magic', '!magic8', '!m8' - Ask the Magic 8 Ball a question!

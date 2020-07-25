@@ -1,0 +1,5 @@
+{
+    "triggerWords2switch_dict": {
+        "bot_bye": ["bye", "goodbye", "see ya"]
+    }
+}

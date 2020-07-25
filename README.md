@@ -1,25 +1,31 @@
-BloomBot
-========
+# Eclectus Bot
 
-A simple chatbot for 2150 TAs.  Deployed to Heroku for webhook into the 2150TA Groupme.
+**A cross-platform messaging service chatbot!**
 
-Local Testing
--------------
+Eclectus runs on Heroku and currently works on these messaging platforms:
 
-Since I was tired of continually deploying broken stuff to Heroku, I wrote a small bot client in CLI; the process for local running is:
+ - GroupMe
+ - Telegram
+
+Also, a shout out to [Apnorton](https://github.com/apnorton) and his [Bloom Bot tutorial](https://www.apnorton.com/blog/2017/02/28/How-I-wrote-a-Groupme-Chatbot-in-24-hours), from which this code is forked.
+
+## Local Testing
+
+You can run `/app.py` to open a "chat prompt", simulate sending messsages to Eclectus, and view its response. It doesn't simulate extracting the chat message from different messaging platforms, so it's mainly useful for testing your custom commands or new modules.
 
 ```
-$ source debug_setup.sh
-$ gunicorn app:app --log-file bot.log & # Run botserver in background
-$ python3 bot_cli.py # Run CLI for sending messages to bot
+    $ python3 app.py 
+    Bot is ready. Press Ctrl+C to exit.
+        Chat > Hello World!
+                {'text': 'Hiya!'}
+        Chat > Hello Eclectus Bot!
+                {'text': "Hi, I'm a bot!"}
+        Chat > Lets !flip a coin
+                {'text': 'Dev flips a coin. It landed on heads!'}
 ```
 
-It's a little hacky (the botserver determines if it's in debug mode and prints responses instead of sending them back over HTTP), but it works and is good enough for simple tests.
+## What does "Eclectus" mean?
 
-Misc
-----
+Eclectus Bot is named after the Eclectus Parrot. You can read more about them over on their [Wikipedia page](https://en.wikipedia.org/wiki/Eclectus_parrot).
 
-**Avatar**: Why such an odd avatar image?  I chose it as a combination of a *mild* resemblence to [Tay][tay]'s avatar and a Deep Dream image.  I used [this generator][deep-dream] to create the generated image.
-
-[tay]: https://en.wikipedia.org/wiki/Tay_(bot) 
-[deep-dream]: https://deepdreamgenerator.com/
+The avatar is a pixel art version of the bird, based off of a [photo](https://en.wikipedia.org/wiki/Eclectus_parrot#/media/File:Eclectus_roratus-20030511.jpg) taken by [Doug Janson](https://commons.wikimedia.org/wiki/User:Dougjj). The avatar image is available under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
