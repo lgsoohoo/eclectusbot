@@ -30,6 +30,22 @@ Some useful resources:
 
  - [GroupMe Developer's Page](https://dev.groupme.com/bots)
 
+## Required Heroku Environment Variables (Config Vars)
+
+ - All platforms
+    - `BOT_NAME` - The name of your bot
+
+ - Telegram
+    - `telegram_token` - API token for your bot (Format: XXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX)
+
+ - GroupMe
+    - `gm_dev_group` - Group ID for the "Dev Room" chat (Format: XXXXXXXX)
+    - `GM_DEV_BOT_ID` - Bot ID for the "Dev Room" chat (Format: XXXXXXXXXXXXXXXXXXXXXXXXXX)
+
+    - `gm_primary_group` - Group ID for the chat group with your friends (Format: XXXXXXXX)
+    - `GM_PRIMARY_BOT_ID` - Bot ID for the chat group with your friends (Format: XXXXXXXXXXXXXXXXXXXXXXXXXX)
+
+
 ## Local Testing
 
 You can run `/app.py` to open a "chat prompt", simulate sending messages to Eclectus, and view its response. It doesn't simulate extracting the chat message from the data received by different messaging platforms, so this is mainly useful for testing your custom commands or new modules.
