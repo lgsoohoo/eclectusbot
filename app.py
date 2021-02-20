@@ -57,7 +57,8 @@ def msg2bot_response(sender, user_input_raw):
 
     # Tabletop RPG Commands
     elif bot_systemTools.check_usage(TabletopRPG().cmds, user_input_normalized):
-        response["text"] = TabletopRPG().respond(user_input_raw, sender)
+        response["text"] = TabletopRPG().respond(user_input_raw, sender) 
+        # Raw input is sent to include parenthesis in original message
 
     # Magic 8 Ball RPG Commands
     elif bot_systemTools.check_usage(Magic8Ball().cmds, user_input_normalized):
@@ -133,7 +134,7 @@ if not telegram_token is None:
             user_message = data['edited_message']
 
         if not 'text' in user_message:
-            return "Telegram - No 'text'field:"+str(data), 200
+            return "Telegram - No 'text' field:"+str(data), 200
 
         bot_response = msg2bot_response(user_message['from']['first_name'], user_message['text'])
 
