@@ -27,7 +27,7 @@ class SystemTools:
     # ========== Functions ==========
 
     # Normalizes text:
-    #  - Removes special characters (except !, replace with a space)
+    #  - Removes special characters (except "!", "-", "_". Replace them with a space)
     #  - Adds a space before a '!'
     #  - Converts all text to lowercase
     # @param text - String - text to process
@@ -44,7 +44,6 @@ class SystemTools:
         text = text.replace("*", " ")
         text = text.replace("(", " ")
         text = text.replace(")", " ")
-        text = text.replace("_", " ")
         text = text.replace("+", " ")
         text = text.replace("`", " ")
         text = text.replace("{", " ")
