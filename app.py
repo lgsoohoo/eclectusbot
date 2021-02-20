@@ -74,7 +74,7 @@ def msg2bot_response(sender, user_input_raw):
 
 groupme_primary_token = os.getenv('GM_DEV_BOT_ID')
 if not groupme_primary_token is None:
-    @app.route('/groupme'+groupme_primary_token, methods=['POST'])
+    @app.route('/groupme', methods=['POST'])
     def groupme_webhook():
         # === The Setup ===
         data = request.get_json()
@@ -120,7 +120,7 @@ if not groupme_primary_token is None:
 
 telegram_token = os.getenv('telegram_token')
 if not telegram_token is None:
-    @app.route('/telegram'+telegram_token.split(":")[1], methods=['POST'])
+    @app.route('/telegram', methods=['POST'])
 
     def telegram_webhook():
         # === The Setup ===
