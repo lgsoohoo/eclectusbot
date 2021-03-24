@@ -27,10 +27,20 @@ def log(msg):
 # @param json_data - dictionary - containing the data to POST
 # @param bot_url - string - url to POST
 def send_message(json_data, bot_url):
-    url = bot_url
-    request = Request(url, urlencode(json_data).encode())
-    json = urlopen(request).read().decode()
-    log(json)
+    # Supposedly these two codes do the same thing, but each only work in 1 platform.
+    # It's kinda late, we'll figure out why later
+    if "telegram" in bot_url:
+        url = bot_url
+        request = Request(url, urlencode(json_data).encode())
+        res = urlopen(request).read().decode()
+        log(res)
+    else: # groupme
+        # https://stackoverflow.com/a/7469725
+        payload = json.dumps(json_data).encode('utf-8')
+        url = bot_url
+        post_req = Request(url, payload)
+        res = urlopen(post_req).read().decode()
+        log(res)
 
 # Takes a raw message and sends back the bot's response
 # @param sender - String - name of sender
