@@ -22,12 +22,13 @@ Some useful resources:
 
 #### Telegram Specific Resources
 
- - [Setting up Telegram specific Config Variables](https://youtu.be/6CpkerdzpWM)
+ - [Setting up Telegram specific Config Variables](https://youtu.be/N33ggcuEyI0)
  - [Setting up the bot's webhook](https://medium.com/@xabaras/setting-your-telegram-bot-webhook-the-easy-way-c7577b2d6f72)
  - Webhook URL "Template": `https://api.telegram.org/bot{my_bot_token}/setWebhook?url={url_to_send_updates_to}`
 
 #### GroupMe-Specific Resources
 
+ - [Setting up GroupMe Config Variables](https://youtu.be/H5HyYMIg-bs)
  - [GroupMe Developer's Page](https://dev.groupme.com/bots)
 
 ## Required Heroku Environment Variables (Config Vars)
