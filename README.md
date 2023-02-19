@@ -1,8 +1,10 @@
 # Eclectus Bot
 
-**A free and customizable cross-platform chatbot!**
+*A free and customizable cross-platform chatbot!*
 
-Eclectus Bot runs on a free Heroku account and currently works on these messaging platforms:
+**Update:** [Heroku no longer has a free tier as of November 2022.](https://blog.heroku.com/next-chapter)
+
+Eclectus Bot runs on a ~~free~~ Heroku account and currently works on these messaging platforms:
 
  - Telegram
  - GroupMe
