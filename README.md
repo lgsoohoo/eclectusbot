@@ -2,7 +2,7 @@
 
 *A free and customizable cross-platform chatbot!*
 
-**Update:** [Heroku no longer has a free tier as of November 2022.](https://blog.heroku.com/next-chapter)
+**Update**: As of November 2022, Heroku [no longer has a free tier](https://blog.heroku.com/next-chapter#focus-on-mission-critical).
 
 Eclectus Bot runs on a ~~free~~ Heroku account and currently works on these messaging platforms:
 
