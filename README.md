@@ -68,4 +68,4 @@ You can run `/app.py` to open a "chat prompt", simulate sending messages to Ecle
 
 Eclectus Bot is named after the Eclectus Parrot. You can read more about them over on their [Wikipedia page](https://en.wikipedia.org/wiki/Eclectus_parrot).
 
-The avatar is a pixel art image of the bird, based on the [photo](https://en.wikipedia.org/wiki/Eclectus_parrot#/media/File:Eclectus_roratus-20030511.jpg) taken by [Doug Janson](https://commons.wikimedia.org/wiki/User:Dougjj). The Eclectus Bot avatar is available under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+The avatar is a pixel art image of the bird, based on the [photo](https://www.flickr.com/photos/33389938@N00/2610533676) taken by [Shiny Things](https://www.flickr.com/photos/33389938@N00/with/16073478975). The Eclectus Bot avatar is available under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
